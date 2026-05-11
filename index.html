@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hurghada Blue — Premium Sea Trips & Excursions</title>
+<meta name="description" content="Book unforgettable sea trips and tourist excursions in Hurghada — Orange Bay, Dolphin House, Safari, Diving and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" class="loader">
+  <div class="loader-wave"></div>
+  <p>Setting Sail...</p>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <i class="fa-solid fa-anchor"></i>
+      <span>MySky<strong>Travels</strong></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#trips">Trips</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="home" class="hero">
+  <div class="hero-slider" id="heroSlider">
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=1920&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1540202404-1b927e27fa8b?w=1920&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&q=80')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Welcome to Hurghada</p>
+    <h1>Discover the <span class="gradient-text">Red Sea</span><br/>Like Never Before</h1>
+    <p class="hero-sub">Luxury island tours, diving adventures, desert safaris and unforgettable experiences crafted just for you.</p>
+    <div class="hero-actions">
+      <a href="#trips" class="btn btn-primary">Explore Trips <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#about" class="btn btn-ghost">Learn More</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>15+</strong><span>Tours</span></div>
+      <div><strong>10K+</strong><span>Happy Guests</span></div>
+      <div><strong>4.9★</strong><span>Rating</span></div>
+    </div>
+  </div>
+  <a href="#trips" class="scroll-indicator"><span></span></a>
+</header>
+
+<!-- ============ TRIPS ============ -->
+<section id="trips" class="section trips-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Excursions</p>
+      <h2>Pick Your Next <span class="gradient-text">Adventure</span></h2>
+      <p class="lead">From turquoise islands to desert dunes — handpicked experiences in Hurghada.</p>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="filters reveal" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="sea">Sea Trips</button>
+      <button class="filter-btn" data-filter="desert">Desert</button>
+      <button class="filter-btn" data-filter="city">City & Culture</button>
+      <button class="filter-btn" data-filter="diving">Diving</button>
+    </div>
+
+    <!-- Trips grid - injected by JS -->
+    <div class="trips-grid" id="tripsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section about-section">
+  <div class="container about-grid">
+    <div class="about-img reveal">
+      <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=80" alt="Hurghada coastline" loading="lazy"/>
+      <div class="floating-badge">
+        <i class="fa-solid fa-award"></i>
+        <div><strong>Since 2012</strong><span>Trusted Agency</span></div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow">About Us</p>
+      <h2>Crafting <span class="gradient-text">Memorable</span> Red Sea Journeys</h2>
+      <p>Hurghada Blue is a premium tourism agency specializing in sea excursions, island getaways, desert adventures and cultural tours across Egypt's Red Sea Riviera. With over a decade of experience, we craft seamless, safe and luxurious journeys for travelers from around the world.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-check-circle"></i> Licensed local guides & captains</li>
+        <li><i class="fa-solid fa-check-circle"></i> Premium boats & equipment</li>
+        <li><i class="fa-solid fa-check-circle"></i> Free hotel pick-up & drop-off</li>
+        <li><i class="fa-solid fa-check-circle"></i> 24/7 customer support</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section id="why" class="section why-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2>Travel With <span class="gradient-text">Confidence</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><i class="fa-solid fa-shield-halved"></i><h3>Safety First</h3><p>Certified equipment, trained crew & full insurance on every trip.</p></div>
+      <div class="why-card reveal"><i class="fa-solid fa-tags"></i><h3>Best Prices</h3><p>Direct operator — no middlemen, no hidden fees, guaranteed value.</p></div>
+      <div class="why-card reveal"><i class="fa-solid fa-headset"></i><h3>24/7 Support</h3><p>WhatsApp our team anytime before, during or after your booking.</p></div>
+      <div class="why-card reveal"><i class="fa-solid fa-star"></i><h3>5-Star Service</h3><p>Thousands of happy travelers and a 4.9 rating across platforms.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="section testimonials-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Testimonials</p>
+      <h2>What Our <span class="gradient-text">Guests</span> Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Orange Bay was a dream! Crystal water, amazing crew, perfect lunch. Booked again the next day!"</p>
+        <div class="t-author"><img src="https://i.pravatar.cc/80?img=32" alt=""/><div><strong>Sarah M.</strong><span>Germany</span></div></div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>"The desert safari was the highlight of our holiday. Sunset from the dunes — unforgettable."</p>
+        <div class="t-author"><img src="https://i.pravatar.cc/80?img=12" alt=""/><div><strong>Marco R.</strong><span>Italy</span></div></div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Super organized from pickup to return. Saw real dolphins at Dolphin House — kids loved it!"</p>
+        <div class="t-author"><img src="https://i.pravatar.cc/80?img=47" alt=""/><div><strong>Anna K.</strong><span>Poland</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact-section">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Plan Your <span class="gradient-text">Adventure</span></h2>
+      <p class="lead">Reach us anytime — we reply within minutes on WhatsApp.</p>
+      <ul class="contact-list">
+        <li><i class="fa-brands fa-whatsapp"></i> <a id="contactWa" href="#">+20 100 000 0000</a></li>
+        <li><i class="fa-solid fa-envelope"></i> info@hurghadablue.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> Sheraton Road, Hurghada, Egypt</li>
+      </ul>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+      </div>
+    </div>
+    <form class="contact-form reveal" onsubmit="event.preventDefault(); sendContact(this);">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="text" placeholder="Trip you're interested in"/>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send via WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo"><i class="fa-solid fa-anchor"></i><span>Hurghada<strong>Blue</strong></span></a>
+      <p>Premium sea trips & excursions in the Red Sea. Crafted with love since 2012.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#trips">Trips</a><a href="#about">About</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Top Tours</h4>
+      <a href="#trips">Orange Bay</a><a href="#trips">Dolphin House</a><a href="#trips">Desert Safari</a><a href="#trips">Cairo Flight</a>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Hurghada Blue. All rights reserved.</div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a id="floatWa" href="#" class="float-wa" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="pulse-ring"></span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
